@@ -8,7 +8,7 @@ const projects = [
     description:
       "Full-stack online pharmacy platform inspired by Jan Aushadhi. Features secure JWT authentication, Spring Security, and scalable REST APIs designed for future AI/ML integrations.",
     tech: ["React", "Spring Boot", "MongoDB", "JWT Security"],
-    github: "https://github.com/surajshukla0069",
+    github: "https://github.com/surajshukla0069/PharmCure",
     demo: "https://pharmcure.vercel.app/",
   },
   {
@@ -31,8 +31,8 @@ const projects = [
     title: "AI Kisan Salahkar",
     description:
       "A smart agriculture advisory web app that helps farmers with AI-powered crop guidance and practical farming recommendations through an accessible, user-friendly interface.",
-    tech: ["AI", "Web App", "Agritech"],
-    github: "https://github.com/surajshukla0069",
+    tech: ["Express Js", "React", "MongoDB"],
+    github: "https://github.com/surajshukla0069/AI-Kisan-Salahkar",
     demo: "https://ai-kisan-salahkar.vercel.app/",
   },
 ];

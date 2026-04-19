@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Github, Linkedin } from "lucide-react";
 
 const HeroSection = () => {
+  const [imageError, setImageError] = useState(false);
+  const profileImage = "/profile.jpg";
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-grid">
       {/* Animated background orbs */}
@@ -19,6 +23,34 @@ const HeroSection = () => {
         >
           <div className="inline-block px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-medium mb-6">
             🚀 Open for Freelance & Full-time Opportunities
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.05 }}
+          className="mb-6 flex justify-center"
+        >
+          <div className="relative">
+            <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-primary/45 via-accent/25 to-primary/10 blur-md" />
+            <div className="relative rounded-full p-[3px] bg-gradient-to-br from-primary/70 via-primary/25 to-accent/60">
+              {!imageError ? (
+                <img
+                  src={profileImage}
+                  alt="Suraj Shukla"
+                  onError={() => setImageError(true)}
+                  className="h-32 w-32 sm:h-36 sm:w-36 rounded-full object-cover object-[50%_22%] border-2 border-background shadow-[0_0_45px_hsl(var(--primary)/0.28)]"
+                />
+              ) : (
+                <div className="h-32 w-32 sm:h-36 sm:w-36 rounded-full border-2 border-background bg-primary/15 flex items-center justify-center text-primary font-heading text-3xl font-bold shadow-[0_0_45px_hsl(var(--primary)/0.2)]">
+                  SS
+                </div>
+              )}
+            </div>
+            <span className="absolute -bottom-1 -right-1 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-background/95 border border-primary/30 text-primary shadow-sm">
+              Available
+            </span>
           </div>
         </motion.div>
 
