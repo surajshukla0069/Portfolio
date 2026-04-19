@@ -27,6 +27,14 @@ const projects = [
     github: "https://github.com/surajshukla0069",
     demo: "https://food-factory-00d2.onrender.com/",
   },
+  {
+    title: "AI Kisan Salahkar",
+    description:
+      "A smart agriculture advisory web app that helps farmers with AI-powered crop guidance and practical farming recommendations through an accessible, user-friendly interface.",
+    tech: ["AI", "Web App", "Agritech"],
+    github: "https://github.com/surajshukla0069",
+    demo: "https://ai-kisan-salahkar.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
