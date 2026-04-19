@@ -9,8 +9,10 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailTo = `mailto:surajshukla0069@gmail.com?subject=Portfolio Contact from ${form.name}&body=${encodeURIComponent(form.message)}`;
-    window.open(mailTo);
+    const whatsappNumber = "919555898982";
+    const text = `Hi Suraj, I want to contact you from your portfolio.\n\nName: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -71,13 +73,15 @@ const ContactSection = () => {
               GitHub Profile
             </a>
             <a
-              href="tel:+919555898982"
+              href="https://wa.me/919555898982"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
             >
               <div className="p-2 rounded-lg bg-primary/10 text-primary">
                 <Phone size={18} />
               </div>
-              +91 9555898982
+              WhatsApp Chat
             </a>
           </div>
         </motion.div>
