@@ -19,6 +19,14 @@ const projects = [
     github: "https://github.com/surajshukla0069",
     demo: "#",
   },
+  {
+    title: "Food Factory",
+    description:
+      "A modern, full-stack food ordering web application built with Spring Boot, Thymeleaf, and MySQL. It provides a seamless experience for users to browse, register, log in, and order food online, while also offering robust admin management features.",
+    tech: ["Spring Boot", "Thymeleaf", "MySQL", "Java"],
+    github: "https://github.com/surajshukla0069",
+    demo: "https://food-factory-00d2.onrender.com/",
+  },
 ];
 
 const ProjectsSection = () => {
