@@ -40,7 +40,8 @@ const HeroSection = () => {
                   src={profileImage}
                   alt="Suraj Shukla"
                   onError={() => setImageError(true)}
-                  className="h-32 w-32 sm:h-36 sm:w-36 rounded-full object-cover object-[50%_22%] border-2 border-background shadow-[0_0_45px_hsl(var(--primary)/0.28)]"
+                  className="h-32 w-32 sm:h-36 sm:w-36 rounded-full object-cover object-center border-2 border-background shadow-[0_0_45px_hsl(var(--primary)/0.28)]"
+                  style={{ imageRendering: "crisp-edges" }}
                 />
               ) : (
                 <div className="h-32 w-32 sm:h-36 sm:w-36 rounded-full border-2 border-background bg-primary/15 flex items-center justify-center text-primary font-heading text-3xl font-bold shadow-[0_0_45px_hsl(var(--primary)/0.2)]">
